@@ -23,49 +23,66 @@ public class Comparators {
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-    public boolean isEqual(int a, int b){
-        return false;
+    public static void main(String[] args){
+        int a = 6;
+        int b = 5;
+        boolean bool1 = isEqual(a, b);
+        System.out.println(bool1);
+        boolean bool2 = greaterThan(a, b);
+        System.out.println(bool2);
+        boolean bool3 = lessThan(a, b);
+        System.out.println(bool3);
+        boolean bool4 = greaterThanOrEqualTo(a, b);
+        System.out.println(bool4);
+        boolean bool5 = lessThanOrEqualTo(a, b);
+        System.out.println(bool5);
+        boolean bool6 = notEqualTo(a, b);
+        System.out.println(bool6);
+        
     }
-
-    /**
-     * @param a the first number to be compared.
-     * @param b the second number to be compared.
-     * @return true if a is greater than b, false otherwise.
-     */
-    public boolean greaterThan(int a, int b){
-        return false;
+      public static boolean isEqual(int a, int b){
+          return a==b;
     }
-    /**
-     * @param a the first number to be compared.
-     * @param b the second number to be compared.
-     * @return true if a is less than b, false otherwise.
-     */
-    public boolean lessThan(int a, int b){
-        return false;
-    }
-    /**
-     * @param a the first number to be compared.
-     * @param b the second number to be compared.
-     * @return true if a is greater than or equal to b, false otherwise.
-     */
-    public boolean greaterThanOrEqualTo(int a, int b){
-        return false;
-    }
-    /**
-     * @param a the first number to be compared.
-     * @param b the second number to be compared.
-     * @return true if a is less than or equal to b, false otherwise.
-     */
-    public boolean lessThanOrEqualTo(int a, int b){
-        return false;
-    }
-
-    /**
-     * @param a the first number to be compared.
-     * @param b the second number to be compared.
-     * @return true if a is not equal to b, false otherwise.
-     */
-    public boolean notEqualTo(int a, int b){
-        return false;
-    }
+  
+      /**
+       * @param a the first number to be compared.
+       * @param b the second number to be compared.
+       * @return true if a is greater than b, false otherwise.
+       */
+      public static boolean greaterThan(int a, int b){
+          return a>b;
+      }
+      /**
+       * @param a the first number to be compared.
+       * @param b the second number to be compared.
+       * @return true if a is less than b, false otherwise.
+       */
+      public static boolean lessThan(int a, int b){
+          return a<b;
+      }
+      /**
+       * @param a the first number to be compared.
+       * @param b the second number to be compared.
+       * @return true if a is greater than or equal to b, false otherwise.
+       */
+      public static boolean greaterThanOrEqualTo(int a, int b){
+          return a>=b;
+      }
+      /**
+       * @param a the first number to be compared.
+       * @param b the second number to be compared.
+       * @return true if a is less than or equal to b, false otherwise.
+       */
+      public static boolean lessThanOrEqualTo(int a, int b){
+          return a<=b;
+      }
+  
+      /**
+       * @param a the first number to be compared.
+       * @param b the second number to be compared.
+       * @return true if a is not equal to b, false otherwise.
+       */
+      public static boolean notEqualTo(int a, int b){
+          return a!=b;
+      }
 }
